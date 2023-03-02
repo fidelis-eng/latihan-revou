@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+/* <--navigation bar--> */
+.container {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-direction: row;
+    padding: 20px 100px;
+    background-color: white;
+}
+.container > div{
+    display: block;
+    padding: 5px 25px;
+    text-align: center;
+    color: black;
+}
+.container > div > a {
+    color: black;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.container > div:hover{
+    background-color: black;
+    color: white;
+}
+.container > div > a:hover{
+    background-color: black;
+    color: white;
+}
+.home, .myprofile, .portofolio,.messageus{
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+}
+.messageus{
+    border-right: 2px solid black;
+
+}
+/* <--header--> */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    flex: 1;
+    margin: 50px 0px 50px 145px;
+}
+/* <--content--> */
+.content{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+
+.content > div{
+    display: flex;
+    flex: 1;
+    align-content: center; 
+    justify-content: center;
+}
+/* form belajar */
+.form_belajar{
+    width: 550px;
+    margin-left: 70px;
+}
+.form_belajar li,
+.pilih_jk {
+    display: flex;
+    align-items: center;
+}
+.form_belajar > li > label,
+.form_belajar > li > p{
+    flex: 1 0 120px;
+    padding: 5px 0px 5px 0px;
+    margin-top: 10px;
+}
+.form_belajar > li > label + *,
+.pilih_jk {
+    flex: 1 0 430px ;
+    padding: 5px 0px 5px 0px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.pilih_jk li{
+    width: 100%;
+    flex: 1;
+}
+.form_belajar li button {
+    background-color: #ddd;
+    color: black;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 5px; 
+    margin-top: 10px;
+    border-radius: 7px;
+}
+.form_belajar li button:hover{
+    background-color: greenyellow;
+    border: green solid 2px;
+}
+
+/* table person */
+.table_person{
+    width: 650px;
+    margin-right: 70px;
+}
+.table_person tr{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.table_person td,
+.table_person th{
+    border: 1px solid #ddd;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    flex: 1;
+}
+.table_person th{
+    text-align: center;
+    background-color: lightgray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: black;
+}
+.table_person  td  a{
+    text-decoration: none;
+    color: black;
+
+}
+.table_person  td  a:hover{
+    color: red;
+}
+
+/* <--footer--> */
+footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid black;
+    padding: 40px 0px 40px 0px;
+    color: #2f2f2f;
+    background-color: #fff;
+}
+footer > p{
+    text-align: end;
+    padding-right: 95px;
+}

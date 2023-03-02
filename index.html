@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-    <h1>hello world</h1>
+        <!-- navigation bar -->
+        <nav class="container">
+            <div class="home"><a href="#">Home</a></div>
+            <div class="myprofile"><a href="#">My Profile</a></div>
+            <div class="portofolio"><a href="#">Portofolio</a></div>
+            <div class="messageus"><a href="#">Message Us</a></div>
+        </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Form Belajar</h1>
+        <p>Ini adalah website latihan pertama</p>
+    </header>
+
+    <!-- main content -->
+    <main class="content">
+        <!-- Form -->
+        <div>
+            <form action="#" method="POST">
+                <ul class="form_belajar">
+                    <li>
+                        <label for="name">Nama :</label>
+                        <input id="name" type="text" placeholder="Nama"/>
+                    </li>
+                    <li>
+                        <label for="tanggal_lahir">Tanggal Lahir :</label>
+                        <input type="date" id="tanggal_lahir" placeholder="Tanggal Lahir"/>
+                    </li>
+                    <li>
+                        <p>Jenis Kelamin :</p>
+                        <ul class="pilih_jk">
+                            <li>
+                                <input type="radio" id="Laki-laki" name="jenis_kelamin" value="Laki-laki"/>
+                                <label for="Laki-laki">Laki-laki</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="Perempuan" name="jenis_kelamin" value="Perempuan"/>
+                                <label for="Perempuan">Perempuan</label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="pesan">Pesan :</label>
+                        <textarea rows="8" id="pesan" type="text" placeholder="Isi pesan"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit" value="submit">Submit</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        
+
+        <!-- table -->
+        <div>
+            <table class="table_person">
+                <tr>
+                    <th>Nama</th>
+                    <th>Tanggal Lahir</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Pesan</th>
+                    <th>Profile</th>
+                    <th>Hapus</th>
+                </tr>
+                <tr>
+                    <td>Andi</td>
+                    <td>22 Februari 2001</td>
+                    <td>Pria</td>
+                    <td>selamat sentosa</td>
+                    <td><a href="#" ><b><i>Klik disini</i></b></a></td>
+                    <td>Hapus</td>
+                </tr>
+                <tr>
+                    <td>Sinta</td>
+                    <td>22 Maret 2002</td>
+                    <td>Wanita</td>
+                    <td>bekerja keras</td>
+                    <td><a href="#" ><b><i>Klik disini</i></b></a></td>
+                    <td>Hapus</td>
+                </tr>                
+                <tr>
+                    <td>Alex</td>
+                    <td>2 Mei 2001</td>
+                    <td>Pria</td>
+                    <td>belajar sampai mati</td>
+                    <td><a href="#" ><b><i>Klik disini</i></b></a></td>
+                    <td>Hapus</td>
+                </tr>
+                <tr>
+                    <td>Rafi</td>
+                    <td>2 Maret 2002</td>
+                    <td>Pria</td>
+                    <td>hidup luar biasa</td>
+                    <td><a href="#" ><b><i>Klik disini</i></b></a></td>
+                    <td>Hapus</td>
+                </tr>
+            </table>
+        </div>
+    </main>
     
+    <!-- footer -->
+    <footer>
+        <p>RevoU 2023</p>
+    </footer>
 </body>
 </html>
